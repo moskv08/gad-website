@@ -1,15 +1,14 @@
 body, html{
     height: 100%;
     margin: 0;
-    font-size: 16px;
     font-family: "Lato", sans-serif;
     font-weight: 400;
     line-height: 1.8em;
     color: #666;
 }
-
+  
 /******************* Image classes *******************/
-.pimg1 {
+.container {
     position: relative;
     opacity: 0.8;
     background-position: center;
@@ -20,32 +19,28 @@ body, html{
     min-height: 100%;
 }
 
-/******************* Player classes *******************/
-.spotify{
-    text-align: center;
-    /* padding: 50px 80px; */
-    padding-top: 20%;
-    background-size: cover;
+.menu > ul{
+    font-size: 14px;
+    list-style-type: none;
+    margin: 0;
+    padding: 20px;
+    text-transform: uppercase;
 }
 
-iframe{
-    width: 400px;
-    height: 480px;
-    border: none;
+.menu li {
+    float: right;
 }
 
-/******************* Section classes *******************/
-.section{
-    text-align: center;
-    padding: 50px 80px;
-    background-size: cover;
-}
-
-.section-light{
-    background-color: #f4f4f4;
+.menu li a{
     color: #666;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
+.menu li a:hover{
+    color: #333;
+}
 /******************* Text classes *******************/
 .title{
     position: absolute;
@@ -58,47 +53,66 @@ iframe{
     text-transform: uppercase;
 }
 
-/* .ptext .border{
-    background-color: #111;
-    color: white;
-    padding: 20px;
-    background-color: transparent;
-} */
-
-/******************* Button classes *******************/
-
-/* .ptext .booking{
-    background-color: #111;
-    color: white;
-    padding: 20px;
-    border: 0;
-} */
-
-/* .ptext .booking:hover{
-    background: #333;
-} */
-
-/******************* Button classes *******************/
-
-/* .myfooter{
-    position: absolute;
-    width: 100%;
-    top: 90%;
-    font-size: 11px;
-    letter-spacing: 4px;
+/******************* Player classes *******************/
+.spotify{
+    position: relative;
     text-align: center;
-    text-transform: uppercase;
-    background: rgb(40, 46, 52, 0.3);
-    color: white;
+    /* padding: 50px 80px; */
+    padding-top: 15rem;
+    padding-bottom: 3rem;
+    background-size: cover;
+}
+
+iframe{
+    width: 400px;
+    height: 550px;
+    border: none;
+}
+
+/******************* Section classes *******************/
+/* .section{
+    text-align: center;
+    padding: 50px 80px;
+    background-size: cover;
+}
+
+.section-light{
+    background-color: #f4f4f4;
+    color: #666;
 } */
+
+/******************* Footer classes *******************/
+footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    text-align: center;
+    font-size: 14px;
+  }
 
 /******************* Media classes *******************/
 
-@media(max-width:568px){
-    .pimg1 {
-        background-attachment: scroll;
-    }
+@media(max-width:700px){
+
     .title {
         font-size: 1rem;
+    }
+
+    .spotify{
+        padding-top: 10rem;
+    }
+
+    footer {
+        font-size: 12px;
+      }
+}
+
+@media(max-width:568px){
+
+    iframe{
+        width: 300px;
+        height: 400px;
     }
 }
