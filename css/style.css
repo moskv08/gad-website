@@ -58,7 +58,7 @@ body, html{
 /******************* Text classes *******************/
 .title{
     position: absolute;
-    top: 10%;
+    top: 15%;
     width: 100%;
     text-align: center;
     color: #666;
@@ -71,14 +71,14 @@ body, html{
 .spotify{
     position: relative;
     text-align: center;
-    padding-top: 15rem;
+    padding-top: 10rem;
     padding-bottom: 3rem;
     background-size: cover;
 }
 
 iframe{
     width: 400px;
-    height: 550px;
+    height: 500px;
     border: none;
 }
 
