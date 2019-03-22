@@ -1,7 +1,7 @@
 body, html{
     height: 100%;
     margin: 0;
-    font-family: "Lato", sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 400;
     line-height: 1.8em;
     color: #666;
@@ -62,7 +62,7 @@ body, html{
     width: 100%;
     text-align: center;
     color: #666;
-    font-size: 27px;
+    font-size: 48px;
     letter-spacing: 8px;
     text-transform: uppercase;
 }
@@ -71,7 +71,6 @@ body, html{
 .spotify{
     position: relative;
     text-align: center;
-    /* padding: 50px 80px; */
     padding-top: 15rem;
     padding-bottom: 3rem;
     background-size: cover;
@@ -82,18 +81,6 @@ iframe{
     height: 550px;
     border: none;
 }
-
-/******************* Section classes *******************/
-/* .section{
-    text-align: center;
-    padding: 50px 80px;
-    background-size: cover;
-}
-
-.section-light{
-    background-color: #f4f4f4;
-    color: #666;
-} */
 
 /******************* Footer classes *******************/
 footer {
@@ -108,10 +95,10 @@ footer {
 
 /******************* Media classes *******************/
 
-@media(max-width:700px){
+@media(max-width:769px){
 
     .title {
-        font-size: 1rem;
+        font-size: 2rem;
     }
 
     .spotify{
@@ -125,8 +112,28 @@ footer {
 
 @media(max-width:568px){
 
+    .title {
+        font-size: 1rem;
+    }
     iframe{
         width: 300px;
         height: 400px;
+    }
+
+    .menu > ul{
+        font-size: 12px;
+        padding: 10px;
+    }
+    
+    .menu .item-left {
+        float: left;
+    }
+    
+    .menu li {
+        float: right;
+    }
+    
+    .menu li a{
+        padding: 10px 10px;
     }
 }
