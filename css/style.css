@@ -95,7 +95,7 @@ footer {
 
 /******************* Media classes *******************/
 
-@media(max-width:769px){
+@media(max-width:768px){
 
     .title {
         font-size: 2rem;
@@ -113,7 +113,12 @@ footer {
 @media(max-width:568px){
 
     .title {
-        font-size: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .title span:last-of-type {
+        display: block;
+        color: #333;
     }
     iframe{
         width: 300px;
