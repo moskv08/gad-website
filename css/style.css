@@ -1,10 +1,15 @@
+:root{
+    --font-color: rgb(246, 243, 211);
+    --font-color-dark: rgb(219, 216, 188);
+}
+
 body, html{
     height: 100%;
     margin: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 400;
     line-height: 1.8em;
-    color: #666;
+    color: var(--font-color);
 }
   
 /******************* Image classes *******************/
@@ -15,7 +20,7 @@ body, html{
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-image: url('../img/image_1.jpg');
+    background-image: url('../img/image_2.png');
     min-height: 100%;
 }
 
@@ -40,14 +45,14 @@ body, html{
 }
 
 .menu li a{
-    color: #666;
+    color: var(--font-color);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
 .menu li a:hover{
-    color: #333;
+    color: var(--font-color-dark);
 }
 
 .fa {
@@ -61,13 +66,17 @@ body, html{
   }
 /******************* Text classes *******************/
 .title{
-    padding-top: 8rem;
+    padding-top: 4rem;
     width: 100%;
     text-align: center;
-    color: #666;
+    color: var(--font-color);
     font-size: 48px;
     letter-spacing: 8px;
     text-transform: uppercase;
+}
+
+.title span:last-of-type {
+    color: var(--font-color-dark);
 }
 
 /******************* Player classes *******************/
@@ -99,7 +108,7 @@ footer {
 /******************* Media classes *******************/
 
 /* LOOK: Greate Smartphones */
-@media(max-width:768px){
+@media(max-width:800px){
 
     .title {
         font-size: 2rem;
@@ -124,7 +133,7 @@ footer {
 
     .title span:last-of-type {
         display: block;
-        color: #333;
+        color: var(--font-color-dark);
     }
     iframe{
         width: 300px;
