@@ -20,7 +20,7 @@ body, html{
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-image: url('../img/image_2.png');
+    background-image: url('../img/image_1.png');
     min-height: 100%;
 }
 
@@ -66,7 +66,7 @@ body, html{
   }
 /******************* Text classes *******************/
 .title{
-    padding-top: 4rem;
+    padding-top: 3.5rem;
     width: 100%;
     text-align: center;
     color: var(--font-color);
@@ -83,14 +83,14 @@ body, html{
 .spotify{
     position: relative;
     text-align: center;
-    padding-top: 6rem;
+    padding-top: 5rem;
     padding-bottom: 3rem;
     background-size: cover;
 }
 
 iframe{
     width: 400px;
-    height: 500px;
+    height: 450px;
     border: none;
 }
 
@@ -116,7 +116,7 @@ footer {
     }
 
     .spotify{
-        padding-top: 5rem;
+        padding-top: 3rem;
     }
 
     footer {
@@ -129,6 +129,7 @@ footer {
 
     .title {
         font-size: 1.5rem;
+        padding-top: 3rem;
     }
 
     .title span:last-of-type {
